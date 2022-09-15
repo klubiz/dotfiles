@@ -37,13 +37,39 @@ nmap <C-J>			<C-W>j
 nmap <C-K>			<C-W>k
 nmap <C-L>			<C-W>l
 
-set background=dark
 set nu
-set sm
-set hlsearch
 set statusline="%f%m%r%h%w [%Y] [0x%02.2B]%< %F%=%4v,%4l %3p%% of %L"
-set autoindent
-set tabstop=2
 set visualbell
+"=== INDENT ===
+set autoindent
+set cindent
+set smartindent
+set tabstop=4
+set shiftwidth=4
+"=== VIEW ===
+set ruler
+set title
+set wrap
 set cursorline
-"colorscheme molokai
+set linebreak
+set showmatch
+set background=dark
+set paste
+"=== SEARCH ===
+set nowrapscan
+set hlsearch
+set ignorecase
+set incsearch
+"=== EDIT ===
+set backspace=eol,start,indent
+set history=1000
+set fenc=utf8
+set fencs=utf8,euc-kr,latin1
+set enc=utf8
+set nobackup
+set tabstop=2
+set expandtab
+set shiftwidth=2
+"<=== VUNDLE config End ===>
+"=== VIM-AIRLINE ===
+set laststatus=2
