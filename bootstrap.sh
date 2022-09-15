@@ -2,7 +2,7 @@
 set -e
 set -o pipefail
 
-cd "$(dirname "BASH_SOURCE}")";
+cd "$(dirname "{BASH_SOURCE}")";
 
 function doIt() {
 				rsync --exclude ".git/" --exclude "bootstrap.sh" \
