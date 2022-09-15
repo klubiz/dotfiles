@@ -1,6 +1,6 @@
 #!/bin/bash
 set -e
-set -o pipefall
+set -o pipefail
 
 cd "$(dirname "BASH_SOURCE}")";
 
